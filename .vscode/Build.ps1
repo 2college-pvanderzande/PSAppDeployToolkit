@@ -20,5 +20,5 @@ $processOptions = @{
 Start-Process @processOptions
 
 # Rename and prepare for upload
-Move-Item -Path "$env:TEMP\Deploy-Application.intunewin" -Destination "$Desktop\$Application.intunewin" -Force -Verbose
+Move-Item -Path "$env:TEMP\Deploy-Application.intunewin" -Destination "$Cache\$Application.intunewin" -Force -Verbose
 explorer $Desktop
